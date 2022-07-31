@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, {useState, useEffect} from 'react';
+import JAlogo from '../public/assests/JAlogo.png';
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai';
 import {FaLinkedinIn, FaGithub, FaTwitter} from 'react-icons/fa';
 
@@ -30,7 +31,7 @@ function Navbar() {
             <Link href='/'>
 
             <Image className='cursor-pointer'
-             src='/../public/assests/JAlogo.png'
+             src={JAlogo}
               alt='/' 
               width='90' 
               height='50' 
@@ -65,7 +66,7 @@ function Navbar() {
             <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#958524] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
                 <div>
                     <div className='flex w-full items-center justify-between'>
-                        <Link href='/'><Image src='/../public/assests/JAlogo.png' width='80' height='40'  alt='/'  /></Link>
+                        <Link href='/'><Image src={JAlogo} width='80' height='40'  alt='/'  /></Link>
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-[#0B102E] p-3 cursor-pointer'>
                             <AiOutlineClose />
                         </div>

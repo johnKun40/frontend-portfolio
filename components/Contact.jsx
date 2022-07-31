@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import React, {useRef} from 'react';
 import contactPic from '../public/assests/contactPic.jpg';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi';
+import {AiOutlineTrademarkCircle} from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -101,6 +100,10 @@ function Contact() {
                         <HiOutlineChevronDoubleUp size={30} />
                     </div>
                 </Link>
+            </div>
+            <div className='flex py-10 justify-center gap-2'>
+                <AiOutlineTrademarkCircle size={20} />
+                <h3>Powered by Next Js & Tailwind</h3>
             </div>
 
         </div>
