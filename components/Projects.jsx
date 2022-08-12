@@ -18,7 +18,7 @@ function Projects() {
                 <ProjectItem title='LinkedIn-Clone' backgroundPic={linkedinPic} projectUrl='https://linkedin-clone-yt-4f12b.web.app/' language={'React Js & Firebase'} />
                 <ProjectItem title='WhatsApp-Clone' backgroundPic={whatsappPic} projectUrl='https://whatsapp-clone-ab45.web.app' language={'React Js & Firebase'} />
                 <ProjectItem title='Amazon-Clone' backgroundPic={amazonPic} projectUrl='https://clone-cab36.web.app/' language={'React Js & Firebase'} />
-                <ProjectItem title='Netflix-Clone' backgroundPic={netflixPic} projectUrl='http://netflix-clone-hazel-one.vercel.app/' language={'Next Js, Sanity IO & Firebase'} />
+                <ProjectItem title='Netflix-Clone' backgroundPic={netflixPic} projectUrl='http://netflix-clone-hazel-one.vercel.app/' language={'Next Js, Stripe & Firebase'} />
             </div>
 
         </div>
