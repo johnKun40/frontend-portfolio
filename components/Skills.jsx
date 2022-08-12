@@ -9,7 +9,8 @@ import gitPic from '../public/assests/skills/githubpic.png';
 import reduxPic from '../public/assests/skills/reducpic.png';
 import javaPic from '../public/assests/skills/javascriptpic.png';
 import vercelPic from '../public/assests/skills/vercelpic.png';
-import firebasePic from '../public/assests/skills/firebaseIcon.png'
+import firebasePic from '../public/assests/skills/firebaseIcon.png';
+import typescriptPic from '../public/assests/skills/typescriptpic.png';
 
 
 
@@ -118,6 +119,16 @@ function Skills() {
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3 className='text-white'>FIREBASE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                        <div className='m-auto'>
+                            <Image alt='/' src={typescriptPic} width='64' height='64' />
+                        </div>
+                        <div className='flex flex-col items-center justify-center'>
+                            <h3 className='text-white'>TYPESCRIPT</h3>
                         </div>
                     </div>
                 </div>
