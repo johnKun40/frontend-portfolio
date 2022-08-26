@@ -14,11 +14,11 @@ function Projects() {
             <p className='text-xl tracking-widest'>Projects</p>
             <h2 className='py-4'>What I Built</h2>
             <div className='grid md:grid-cols-2 gap-8'>
-            <ProjectItem title='Hulu-Clone' backgroundPic={huluPic} projectUrl='https://hulu-clone1-johnkun40.vercel.app/' language={'Next Js & Tailiwind'} />
-                <ProjectItem title='LinkedIn-Clone' backgroundPic={linkedinPic} projectUrl='https://linkedin-clone-yt-4f12b.web.app/' language={'React Js & Firebase'} />
-                <ProjectItem title='WhatsApp-Clone' backgroundPic={whatsappPic} projectUrl='https://whatsapp-clone-ab45.web.app' language={'React Js & Firebase'} />
-                <ProjectItem title='Amazon-Clone' backgroundPic={amazonPic} projectUrl='https://clone-cab36.web.app/' language={'React Js & Firebase'} />
-                <ProjectItem title='Netflix-Clone' backgroundPic={netflixPic} projectUrl='http://netflix-clone-hazel-one.vercel.app/' language={'Next Js, Stripe & Firebase'} />
+            <ProjectItem title='Netflix-Clone' backgroundPic={netflixPic} projectUrl='/netflix' language={'Next Js, Stripe & Firebase'} />
+            <ProjectItem title='LinkedIn-Clone' backgroundPic={linkedinPic} projectUrl='/linkedin' language={'React Js & Firebase'} />
+            <ProjectItem title='Hulu-Clone' backgroundPic={huluPic} projectUrl='/hulu' language={'Next Js & Tailiwind'} />
+                <ProjectItem title='WhatsApp-Clone' backgroundPic={whatsappPic} projectUrl='/whatsapp' language={'React Js & Firebase'} />
+                <ProjectItem title='Amazon-Clone' backgroundPic={amazonPic} projectUrl='/amazon' language={'React Js & Firebase'} />
             </div>
 
         </div>

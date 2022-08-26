@@ -11,7 +11,7 @@ function ProjectItem({title, backgroundPic, projectUrl, language }) {
         <h3 className='text-white tracking-wider text-center'>{title}</h3>
         <p className='pb-4 pt-2 text-white text-center '>{language}</p>
         <a href={projectUrl}>
-            <p className='text-[#0B102E] text-center py-3 rounded-lg bg-white font-bold text-lg cursor-pointer'>Go to site</p>
+            <p className='text-[#0B102E] text-center py-3 rounded-lg bg-white font-bold text-lg cursor-pointer'>More Info</p>
         </a>
     </div>
 </div>

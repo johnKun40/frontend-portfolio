@@ -17,7 +17,9 @@
     "react-simple-typewriter": "^3.0.1",
     "react-spinners": "^0.13.4",
     "react-typewriter-effect": "^1.1.0",
-    "typewriter-effect": "^2.19.0"
+    "three": "^0.143.0",
+    "typewriter-effect": "^2.19.0",
+    "vanta": "^0.5.22"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

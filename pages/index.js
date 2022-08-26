@@ -1,4 +1,4 @@
-import React, {useState, useEffect, CSSProperties} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import About from '../components/About';
@@ -11,6 +11,7 @@ import HashLoader from "react-spinners/HashLoader";
 
 
 
+
 export default function Home() {
   
   const [loading, setLoading] = useState(false);
@@ -19,8 +20,9 @@ export default function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000)
+    }, 2000)
   }, [])
+
 
 
 
