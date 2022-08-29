@@ -8,6 +8,7 @@ import {AiOutlineTrademarkCircle} from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import toast, {Toaster} from 'react-hot-toast';
 
 function Contact() {
 
@@ -21,9 +22,38 @@ function Contact() {
         .then((result) => {
             console.log(result.text)
             e.target.reset();
+            toast.custom((t) => (
+                <div
+                  className={`${
+                    t.visible ? 'animate-enter' : 'animate-leave'
+                  } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+                >
+                  <div className="flex-1 w-0 p-4">
+                    <div className="flex items-start">
+                      <div className="ml-3 flex-1">
+                        <p className="text-sm font-medium text-gray-900">
+                          Message Sent!
+                        </p>
+                        <p className="mt-1 text-sm text-gray-500">
+                          Thank you for reaching out.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex border-l border-gray-200">
+                    <button
+                      onClick={() => toast.dismiss(t.id)}
+                      className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              ))
         }, (error) => {
             console.log(error.text);
-        });
+        })
+          ;
     };
 
     useEffect(() => {
@@ -32,6 +62,7 @@ function Contact() {
 
   return (
     <div id='contact' className='w-full lg:h-screen'>
+        <Toaster position="bottom-center" reverseOrder={false} />
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
             <p className='text-xl tracking-widest uppercase'>Contact</p>
             <h2 className='py-4'>Get In Touch</h2>
@@ -78,21 +109,21 @@ function Contact() {
 
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm py-2'>Name</label>
-                                    <input className='border-2 rounded-lg p-3 flex border-[#2E290B]' type="text" name='from_name'  />
+                                    <input className='border-2 rounded-lg p-3 flex border-[#2E290B]' type="text" name='from_name' required  />
                                 </div>
 
                             
                             <div className='flex flex-col py-2 '>
                                 <label className='uppercase text-sm py-2'>Email</label> 
-                                <input className='border-2 rounded-lg p-3 flex border-[#2E290B]' type="email" name='from_email'  /> 
+                                <input className='border-2 rounded-lg p-3 flex border-[#2E290B]' type="email" name='from_email' required  /> 
                             </div>
                             <div className='flex flex-col py-2 '>
                                 <label className='uppercase text-sm py-2'>Subject</label> 
-                                <input className='border-2 rounded-lg p-3 flex border-[#2E290B]' type="text" name='subject' /> 
+                                <input className='border-2 rounded-lg p-3 flex border-[#2E290B]' type="text" name='subject' required /> 
                             </div>
                             <div className='flex flex-col py-2 '>
                                 <label className='uppercase text-sm py-2'>Message</label> 
-                                <textarea className='border-2 rounded-lg p-3 border-[#2E290B]' rows='10' name='message'></textarea>
+                                <textarea className='border-2 rounded-lg p-3 border-[#2E290B]' rows='10' name='message' required></textarea>
                             </div>
                             <button className='w-full p-4 mt-4'>Send Message</button>
                         </form>
