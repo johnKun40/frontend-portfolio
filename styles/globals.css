@@ -31,4 +31,8 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#0B102E] to-[#3c4891] text-white
   }
 
+  .set {
+    @apply !h-screen overflow-hidden
+  }
+
 }
