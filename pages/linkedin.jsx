@@ -29,6 +29,7 @@ function linkedin() {
                     This app was built using React JS and Redux and hosted using Firebase. Users can sign up or sign in using firebase authentication. Users are then able to post on the main with realtime update using firestore database. This is where I learnt how to use redux and fetch data from firebase.
                 </p>
                 <a href="https://linkedin-clone-yt-4f12b.web.app/" target='_blank' rel='noopener noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Demo</button></a>
+                <a href="https://github.com/johnKun40/linkedIn-clone" target='_blank' rel='noopener noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Code</button></a>
             </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                 <div className='p-2'>

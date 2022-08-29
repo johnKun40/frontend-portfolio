@@ -29,6 +29,7 @@ function whatsapp() {
                     This app was built using React JS and hosted using Firebase. Users can log in using their gmail accounts and can have 1 to 1 conversations with other users. Users can also create other rooms to speak to other users. It fetches chats and time stamps from firebase and displays it dynamically.
                 </p>
                 <a href="https://whatsapp-clone-ab45.firebaseapp.com/" target='_blank' rel='noopener noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Demo</button></a>
+                <a href="https://github.com/johnKun40/WhatsApp-Clone" target='_blank' rel='noopener noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Code</button></a>
             </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                 <div className='p-2'>

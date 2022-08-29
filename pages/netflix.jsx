@@ -31,6 +31,7 @@ function netflix() {
                     Customers and products are handled using firebase. TypeScript was used to protect the platform from errors caused by undefined values. Please use this card number to test the app - 4242424242424242 and any date and cvc will work.
                 </p>
                 <a href="https://netflix-clone-hazel-one.vercel.app/" target='_blank' rel='noopener noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Demo</button></a>
+                <a href="https://github.com/johnKun40/netflix-clone" target='_blank' rel='noopener noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Code</button></a>
             </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                 <div className='p-2'>
