@@ -19,7 +19,7 @@ import "aos/dist/aos.css";
 function Skills() {
 
     useEffect(() => {
-        Aos.init({duration: 3000});
+        Aos.init({duration: 1000});
       },[])
 
   return (
@@ -29,7 +29,9 @@ function Skills() {
             <h2 className='py-4'>What I can Do</h2>
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
 
-                <div data-aos="flip-left" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={reactPic} width='64' height='64' />
@@ -39,7 +41,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-left" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={cssPic} width='64' height='64' />
@@ -49,7 +53,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-left" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={htmlPic} width='64' height='64' />
@@ -59,7 +65,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-left" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={tailwindPic} width='64' height='64' />
@@ -69,7 +77,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-right" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={nextPic} width='64' height='64' />
@@ -79,7 +89,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-right" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={gitPic} width='64' height='64' />
@@ -89,7 +101,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-right" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={reduxPic} width='64' height='64' />
@@ -99,7 +113,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-right" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={javaPic} width='64' height='64' />
@@ -109,7 +125,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-left" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={vercelPic} width='64' height='64' />
@@ -119,7 +137,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-left" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={firebasePic} width='64' height='64' />
@@ -129,7 +149,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-left" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div data-aos="flip-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
                             <Image alt='/' src={typescriptPic} width='64' height='64' />

@@ -18,7 +18,7 @@ function About() {
                 </p>
                 <p className='text-white py-2'>
                     Interested with how complex websites and applications are built, I started learning JavaScript and was even more enarmored with 
-                    programming languages. I then started building clones of popular websites to improve my skills.
+                    programming languages. I then started building clones of popular websites with the help of professionals on youtube and stackoverflow to improve my skills.
                 </p>
             </div>
             <div className='w-full shadow-xl shadow-[#0B102E] rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>

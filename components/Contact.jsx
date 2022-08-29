@@ -1,11 +1,13 @@
 import Image from 'next/image';
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import contactPic from '../public/assests/contactPic.jpg';
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi';
 import {AiOutlineTrademarkCircle} from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function Contact() {
 
@@ -23,6 +25,10 @@ function Contact() {
             console.log(error.text);
         });
     };
+
+    useEffect(() => {
+        Aos.init({duration: 1000});
+      },[])
 
   return (
     <div id='contact' className='w-full lg:h-screen'>
@@ -63,7 +69,9 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className='col-span-3 w-full h-auto shadow-xl shadow-[#0B102E] rounded-xl lg:p-4'>
+                <div data-aos="zoom-in"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='col-span-3 w-full h-auto shadow-xl shadow-[#0B102E] rounded-xl lg:p-4'>
                     <div className='p-4'>
 
                         <form ref={form} onSubmit={sendEmail}>
